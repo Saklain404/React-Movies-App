@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.ComponentAlignment{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+.homeIcon{
+  width: 8rem;
+  height: 8rem;
+  opacity: 70%;
+  padding: 7rem;
+}
+.homeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
