@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MovieInfoComponent.css";
-import Axios from "axios";
+import axios from "axios";
 import { API_KEY } from "../../App";
 
 const MovieInfoComponent = (props) => {
@@ -8,7 +8,7 @@ const MovieInfoComponent = (props) => {
   const [movieInfo, setMovieInfo] = useState();
   const { selectedMovie } = props;
   useEffect(() => {
-    Axios
+    axios
       .get(`https://www.omdbapi.com/?i=${selectedMovie}&apikey=${API_KEY}`)
       .then((response) => setMovieInfo(response.data));
   }, [selectedMovie]);
@@ -21,10 +21,10 @@ const MovieInfoComponent = (props) => {
       <div className="InfoColumns">
         <span className="MovieNames">Movie : {movieInfo?.Title}</span>  
         <span className="Infos">
-          IMDB Rating: <span className="spn">{movieInfo.imdbRating}</span>
+          IMDB Rating: {movieInfo?.imdbRating}
         </span>
         <span className="Infos">
-          Year: <span className="spn">{movieInfo?.Year}</span>
+          Year: <span className="spn"></span>{movieInfo?.Year}
         </span>
         <span className="Infos">
           Language: <span className="spn">{movieInfo?.Language}</span>
