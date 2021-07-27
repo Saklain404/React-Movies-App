@@ -17,17 +17,17 @@ const MovieInfoComponent = (props) => {
   return (
     <div className="MovieInfoContainers">
       {movieInfo?<> 
-      <img className="CoverImages" src={movieInfo.Poster} alt="ggg" />
+      <img className="CoverImages" src={movieInfo?.Poster} alt="ggg" />
       <div className="InfoColumns">
-        <span className="MovieNames">Movie : {movieInfo.Title}</span>  
+        <span className="MovieNames">Movie : {movieInfo?.Title}</span>  
         <span className="Infos">
           IMDB Rating: <span className="spn">{movieInfo.imdbRating}</span>
         </span>
         <span className="Infos">
-          Year: <span className="spn">{movieInfo.Year}</span>
+          Year: <span className="spn">{movieInfo?.Year}</span>
         </span>
         <span className="Infos">
-          Language: <span className="spn">{movieInfo.Language}</span>
+          Language: <span className="spn">{movieInfo?.Language}</span>
         </span>
         <span className="Infos">
           Rated: <span className="spn"> {movieInfo?.Rated}</span>
