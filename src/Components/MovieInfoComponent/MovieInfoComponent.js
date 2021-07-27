@@ -21,10 +21,10 @@ const MovieInfoComponent = (props) => {
       <div className="InfoColumns">
         <span className="MovieNames">Movie : {movieInfo?.Title}</span>  
         <span className="Infos">
-          IMDB Rating: {movieInfo?.imdbRating}
+          IMDB Rating: <span className="spn">{movieInfo?.imdbRating}</span>
         </span>
         <span className="Infos">
-          Year: <span className="spn"></span>{movieInfo?.Year}
+          Year: <span className="spn">{movieInfo?.Year}</span>
         </span>
         <span className="Infos">
           Language: <span className="spn">{movieInfo?.Language}</span>
