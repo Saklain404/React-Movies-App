@@ -28,9 +28,10 @@
   }
 .Infos{
     padding: 0.25rem;
+    
 }
 .spn{
-    opacity: 50%;
+    opacity: 0.6;
 }
 
 .colseBtn{
