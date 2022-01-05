@@ -51,7 +51,7 @@ const MovieInfoComponent = (props) => {
           Plot: <span className="spn">{movieInfo?.Plot}</span>
         </span>
       </div>
-      <div onClick={()=>props.onMovieSelect()}  className="colseBtn">X</div>
+      <div onClick={()=>props.onMovieSelect()}  className="colseBtn">Ggg</div>
       </> : "Loading..."}
     </div>
   );

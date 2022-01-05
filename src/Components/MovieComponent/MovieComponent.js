@@ -7,7 +7,7 @@ const MovieComponent = (props) => {
 
   return (
     <div onClick={()=>{props.onMovieSelect(imdbID);}} className="MovieContainer" >
-        <img className="CoverImage" src={Poster} alt="ggg"/>
+        <img className="CoverImage" src={Poster} alt="poster"/>
         <span className="MovieName">{Title}</span>
         <div className="InfoColumn">
             <span className="MovieInfo"> Year : {Year}</span>
