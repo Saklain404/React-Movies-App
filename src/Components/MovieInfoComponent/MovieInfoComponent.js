@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MovieInfoComponent.css";
+import CrossIcon from "../../img/Cross.png"
 import axios from "axios";
 import { API_KEY } from "../../App";
 
@@ -51,7 +52,7 @@ const MovieInfoComponent = (props) => {
           Plot: <span className="spn">{movieInfo?.Plot}</span>
         </span>
       </div>
-      <div onClick={()=>props.onMovieSelect()}  className="colseBtn">Ggg</div>
+      <div onClick={()=>props.onMovieSelect()} className="closeSection" ><img className="colseBtn" src={CrossIcon}/></div>
       </> : "Loading..."}
     </div>
   );
